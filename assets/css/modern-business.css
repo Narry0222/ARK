@@ -45,3 +45,5 @@ p{text-align:justify;font-size:14px;}
 .nav-link {
     padding: 4px 12px !important;
 }
+.error {color: red; font-size: 12px !important; }
+.frm_vld {margin-top: 3px;}

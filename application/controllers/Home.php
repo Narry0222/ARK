@@ -44,10 +44,11 @@ class Home extends CI_Controller {
     }
 
     public function register_fshr() {
+
         $data['title'] = "Fresher Registration";
 
         $this->load->library('form_validation');
-        $this->form_validation->set_error_delimiters('<div class="error">', '</div>');
+        $this->form_validation->set_error_delimiters('<div class="error frm_vld">', '</div>');
         $this->form_validation->set_rules('name', 'Name', 'trim|required|min_length[2]|max_length[100]');
         $this->form_validation->set_rules('email', 'Email', 'trim|valid_email|max_length[100]');
         $this->form_validation->set_rules('mobile', 'Mobile', 'trim|max_length[15]');
@@ -76,7 +77,43 @@ class Home extends CI_Controller {
         if ($this->form_validation->run() == FALSE) {
             $this->load->view('home/register_fshr', $data);
         } else {
-            
+            $now = date('Y-m-d H:i:s', strtotime('now'));
+            $postdata = array(
+                'name' => $this->input->post('name'),
+                'email' => $this->input->post('email'),
+                'mobile' => $this->input->post('mobile'),
+                'address' => $this->input->post('address'),
+                'street' => $this->input->post('street'),
+                'city' => $this->input->post('city'),
+                'district' => $this->input->post('district'),
+                'state' => $this->input->post('state'),
+                'pincode' => $this->input->post('pincode'),
+                'phone' => $this->input->post('phone_res'),
+                'gender' => $this->input->post('gender'),
+                'age' => $this->input->post('age'),
+                'ssc' => $this->input->post('ssc'),
+                'inter' => $this->input->post('inter'),
+                'degree' => $this->input->post('degree'),
+                'masters' => $this->input->post('masters'),
+                'type1' => $this->input->post('type1'),
+                'type2' => $this->input->post('type2'),
+                'location' => $this->input->post('location'),
+                'job_technology' => $this->input->post('technology'),
+                'other_location' => $this->input->post('otherLocation'),
+                'other_technology' => $this->input->post('otherTechnology'),
+                'passport' => $this->input->post('passport'),
+                'referred' => $this->input->post('reference'),
+                'created' => $now,
+                'modified' => $now
+            );
+            $insert = $this->db->insert('fresher', $postdata);
+            if ($insert) {
+                $this->session->set_flashdata('success', 'Details Submitted Successfully');
+                redirect(base_url('register_fshr'));
+            } else {
+                $this->session->set_flashdata('error', 'Details submission Failed, try again later');
+                redirect(base_url('register_fshr'));
+            }
         }
     }
 
