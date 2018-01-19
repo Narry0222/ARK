@@ -1,0 +1,47 @@
+body{padding-top:54px;font-family:work sans,sans-serif;}
+h1, h2, h3, h4, h5, h6{font-family:raleway !important;}
+h4{font-size:18px;}
+h2{font-size:26px !important;}
+h3{font-size:22px;}
+h6{font-size:14px;line-height:24px;}
+p{text-align:justify;font-size:14px;}
+.listtype{font-size:14px;line-height:25px;}
+.listtype li{padding-top:5px;padding-bottom:5px;}
+.nav-item{font-family:quicksand;}
+.nav-link {
+    color: #ec489b!important; 
+}
+.nav-link:hover {
+    color: #bb0662!important; 
+}
+.carousel-item{height:65vh;min-height:300px;background:no-repeat center center scroll;-webkit-background-size:cover;-moz-background-size:cover;-o-background-size:cover;background-size:cover;}
+.portfolio-item{margin-bottom:30px;}
+.bg-light {background-color: #FFF!important;}
+.fixed-top{background:#ffffff;box-shadow: 0 0px 0px 0 rgba(0, 0, 0, 0.2), 0 0px 8px 0 rgba(0, 0, 0, 0.19);border-bottom: 2px solid #de0e7047;}
+.sevices_heading{text-align:center;color:brown;font-family:sans-serif;font-weight:700;margin-bottom:25px;}
+.card-title{font-size:16px;line-height:30px;text-align:center;}
+.service-list li{text-align:justify;font-family:work sans;font-size:14px;}
+.about-website{margin:15px 0px 20px 0px;background:#eeeeee6e;padding:15px 15px 0px 15px;border:1px solid #eee;border-radius:5px;}
+.welcome-website{margin:25px 0px 0px 0px;background:#eeeeee6e;padding:25px 15px 15px 15px;border:1px solid #eee;border-radius:5px;}
+.welcome-clients{margin:15px 0px 25px 0px;padding:15px;border:1px solid #eee;}
+.welcome-clients h6{margin-top:10px;letter-spacing:1px;font-family:quicksand !important;}
+.middle-heading{margin:15px 0 !important;padding:10px;background:#007bff0d;border-left:3px solid #007bff96;color:#007bff;}
+.carousel-caption{background:#00000070;padding:15px;border-radius:5px;}
+.carousel-caption p{font-size:17px;}
+.carousel-caption p a{color:#FFC107;}
+.card img{opacity:0.7;}
+.contacts-home{padding:15px;background:#eeeeee52;border:1px solid #eee;border-radius:5px;letter-spacing:1px;margin-bottom:25px;padding-left:25px;}
+.contacts-home h3{margin-bottom:20px;font-weight:700;}
+.contacts-home h6{font-size:16px;line-height:24px;margin-bottom:20px;}
+.contacts-home p{font-size:13px;margin-bottom:5px;font-family:Quicksand;}
+.indian{text-align:center;font-size:24px;color:#2196F3;font-family:Cinzel;letter-spacing:2px;padding:5px 10px;background:#8dc9f914;border:1px solid #2196f326;border-radius:5px;}
+.dropdown-toggle::after{margin-left: 5px; vertical-align: 2px;}
+.dropdown-item {font-size: 13px;}
+.navActive {
+    background: #f6bcd747;
+    border: 1px solid #f6bcd7;
+    border-radius: 3px;
+}
+.nav-link {
+    padding: 4px 12px !important;
+}
