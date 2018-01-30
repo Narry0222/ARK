@@ -56,6 +56,7 @@ body {
     text-align: center;
     font-family: raleway;
     letter-spacing: 1px;
+    background: #ecf0f59e;
 }
 
 #example1 td {
@@ -85,4 +86,8 @@ body {
 
 .view_file table td {
     padding: 7px 15px !important;
+}
+
+.box {
+    border-top: 0;
 }
